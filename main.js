@@ -23,7 +23,3 @@ document.getElementById('InOrden').addEventListener('click',imprimirIn)
 document.getElementById('PostOrden').addEventListener('click',ImprimirPost)
 document.getElementById('PreOrden').addEventListener('click',ImprimirPre)
 
-function buscar(){
-    var dato = document.getElementById('dato').value
-    var Buscandoando = busqueda.buscarNumero(dato, busqueda.raiz)
-}

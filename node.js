@@ -5,6 +5,12 @@ class Nodo{
         this.hizq = null;
         this.hder = null;
     }
+    set Dato(dato){
+        this.dato(dato)
+    }
+    get Datos(){
+        return this.dato
+    }
     }
 
 

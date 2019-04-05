@@ -87,10 +87,6 @@ a(n, r) {
          return this.preOrden(this.raiz)
  }
 
- buscarnumero(dato,r){
-     if (dato == r.dato) {
-         
-     }
- }
+
 }
 
