@@ -27,13 +27,13 @@ a(n, r) {
 
 //izq - raiz - dere
  inO(r) {
-    var c = "-";
+    var c = " ";
     if (r.hizq != null) {
-        c += this.inO(r.hizq) + "-";
+        c += this.inO(r.hizq) + " ";
     }
     c += r.dato;
     if (r.hder != null) {
-        c += this.inO(r.hder) + "-";
+        c += this.inO(r.hder) + " ";
 
     }
     return c
@@ -48,12 +48,12 @@ a(n, r) {
  
 //izq - der -raiz
  postO(r) {
-     var c = "-";
+     var c = " ";
      if (r.hizq != null) {
-         c += this.postO(r.hizq)+ "-"
+         c += this.postO(r.hizq)+ " "
      }
      if (r.hder != null) {
-         c += this.postO(r.hder)+ "-"
+         c += this.postO(r.hder)+ " "
      }
      c += r.dato
      return c
@@ -69,13 +69,13 @@ a(n, r) {
 
 //raiz - der - izq
  preOrden(r) {
-     var c = "-";
+     var c = " ";
      c += r.dato
      if (r.hizq != null) {
-         c += this.preOrden(r.hizq)+ "-"
+         c += this.preOrden(r.hizq)+ " "
      }
      if (r.hder != null) {
-         c += this.preOrden(r.hder)+ "-"
+         c += this.preOrden(r.hder)+ " "
      }
      return c;
     }
@@ -86,4 +86,11 @@ a(n, r) {
      } else
          return this.preOrden(this.raiz)
  }
+
+ buscarnumero(dato,r){
+     if (dato == r.dato) {
+         
+     }
+ }
 }
+
