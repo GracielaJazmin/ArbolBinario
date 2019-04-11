@@ -17,15 +17,6 @@ function ImprimirPost() {
 function ImprimirPre() {
     document.getElementById('imprimir-pre').textContent = `Arbol Pre-Orden: ${busqueda.preOrder()}`
 }
-
-
-document.getElementById('agregarDato').addEventListener('click',agregarNodo);
-document.getElementById('InOrden').addEventListener('click',imprimirIn)
-document.getElementById('PostOrden').addEventListener('click',ImprimirPost)
-document.getElementById('PreOrden').addEventListener('click',ImprimirPre)
-
-
-
 function busca(){
     let datos = document.getElementById('dato').value;
     let recorrido = busqueda.buscar(datos, busqueda.raiz)
@@ -37,4 +28,10 @@ function busca(){
         document.getElementById('buscar').textContent = 'NO Encontrado'
     }
 }
+
+document.getElementById('agregarDato').addEventListener('click',agregarNodo);
+document.getElementById('InOrden').addEventListener('click',imprimirIn)
+document.getElementById('PostOrden').addEventListener('click',ImprimirPost)
+document.getElementById('PreOrden').addEventListener('click',ImprimirPre)
+
 document.getElementById('buscar-numero').addEventListener('click',busca);

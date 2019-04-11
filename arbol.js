@@ -96,13 +96,13 @@ a(n, r) {
 }
 
 buscar(dato,raiz){
-    if (this.raiz  = null) 
+    if (raiz  = null) 
         return false
     else 
-    if (this.dato == raiz.dato) 
+    if (dato == raiz.dato) 
         return true;
         else 
-            if(dato<r.dato)
+            if(dato<raiz.dato)
                 return this.buscar(dato, raiz.hizq)
             else
                 return this.buscar(dato,raiz.hder)
