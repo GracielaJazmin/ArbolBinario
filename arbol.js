@@ -87,7 +87,7 @@ a(n, r) {
          return this.preOrden(this.raiz)
  }
 
- buscar(dato){
+ /*buscar(dato){
     if (this.raiz = null) {
         return false
     }
@@ -107,6 +107,29 @@ buscar(dato,raiz){
             else
                 return this.buscar(dato,raiz.hder)
 
+}*/
+
+buscar(dato, raiz){
+    if (dato == raiz.dato) {
+        if (this.buscar(dato, raiz.hizq)) {
+            return true
+        }
+    }
+    else
+    {
+        if (raiz.hizq != null) {
+            if (this.buscar(dato, raiz.hizq)) {
+                return true
+            }
+        }
+
+        if (raiz.hder != null) {
+            if (this.buscar(dato, raiz.hder)) {
+                return true
+            }
+        }
+    }
+    return false
 }
 
 }
