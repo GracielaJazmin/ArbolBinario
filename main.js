@@ -5,6 +5,7 @@ function agregarNodo() {
     let numeroNodo = new Nodo(numero);
     busqueda.agregar(numeroNodo)
 }
+
 function imprimirIn() {
     document.getElementById('imprimir-In').textContent = `Arbol In-Orden: ${busqueda.inOrder()}`
 }
@@ -23,3 +24,17 @@ document.getElementById('InOrden').addEventListener('click',imprimirIn)
 document.getElementById('PostOrden').addEventListener('click',ImprimirPost)
 document.getElementById('PreOrden').addEventListener('click',ImprimirPre)
 
+
+
+function busca(){
+    let datos = document.getElementById('dato').value;
+    let recorrido = busqueda.buscar(datos, busqueda.raiz)
+
+    if (recorrido == true){
+        document.getElementById('buscar').textContent = 'Encontrado'
+    }
+    else{
+        document.getElementById('buscar').textContent = 'NO Encontrado'
+    }
+}
+document.getElementById('buscar-numero').addEventListener('click',busca);
