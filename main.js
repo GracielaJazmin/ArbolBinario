@@ -37,6 +37,4 @@ function busca(){
     }
 }
 
-
-
 document.getElementById('buscar-numero').addEventListener('click',busca);

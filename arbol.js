@@ -96,7 +96,7 @@ a(n, r) {
 }
 
 buscar(dato,raiz){
-    if (raiz  = null) 
+    if (this.raiz  = null) 
         return false
     else 
     if (dato == raiz.dato) 
@@ -110,7 +110,7 @@ buscar(dato,raiz){
 }*/
 
 buscar(dato, raiz){
-    if (dato == raiz.dato) {
+    if (this.dato == raiz.dato) {
         if (this.buscar(dato, raiz.hizq)) {
             return true
         }
@@ -129,7 +129,7 @@ buscar(dato, raiz){
             }
         }
     }
-    return false
+    return true
 }
 
 }
